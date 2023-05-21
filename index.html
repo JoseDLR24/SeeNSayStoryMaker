@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>See'N Say!</title>
+        <script src="https://kit.fontawesome.com/cc97e2791d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <script src="js/index.js" defer></script>
+    </head>
+    <body>
+        <!-- Header section of the page -->
+        <header>
+            <h1>See'N say Story Maker<i class="fa-solid fa-shuffle" style="color: red; font-size: 60px"></i></h1>
+        </header>
+        <!-- Output the story when the user clicks the button 'Play' -->
+        <h2 id="story">_____________________________</h2>
+        <!-- first container for main interface buttons -->
+        <div class="container">
+            <button id="random" class="interfacebt">
+                random 
+            </button>
+            <button id="play" class="interfacebt">play</button>
+            <button id="reset" class="interfacebt">reset</button>
+        </div>
+        <!-- clickable number buttons to change the word selection depending on the section -->
+        <!-- all big important div tags have the same class in order to make easier the CSS -->
+        <div class="container">
+            <button id="noun1" class="storybt">1</button>
+            <button id="verb" class="storybt">2</button>
+            <button id="adjective" class="storybt">3</button>
+            <button id="noun2" class="storybt">4</button>
+            <button id="setting" class="storybt">5</button>
+        </div>
+        <!-- Every word is working as a option to make the story, so each one is on a different div that is contained in a bigger one that has its own id and class in order to be called later -->
+        <div class="container">
+            <div id="noun1opt" class="options">
+                <div>
+                    <p>The turkey</p>
+                </div>
+                <div>
+                    <p>Dad</p>
+                </div>
+                <div>
+                    <p>Mom</p>
+                </div>
+                <div>
+                    <p>The dog</p>
+                </div>
+                <div>
+                    <p>My teacher</p>
+                </div>
+                <div>
+                    <p>The elephant</p>
+                </div>
+                <div>
+                    <p>The cat</p>
+                </div>
+            </div>
+            <!-- Second section div for the verb options that will make part in the story -->
+            <div id="verbopt" class="options">
+                <div>
+                    <p>sat on</p>
+                </div>
+                <div>
+                    <p>ate</p>
+                </div>
+                <div>
+                    <p>danced with</p>
+                </div>
+                <div>
+                    <p>saw</p>
+                </div>
+                <div>
+                    <p>doesn't like</p>
+                </div>
+                <div>
+                    <p>kissed</p>
+                </div>
+            </div>
+            <!-- third section div for adjective options -->
+            <div id="adjectivesopt" class="options">
+                <div>
+                    <p>a funny</p>
+                </div>
+                <div>
+                    <p>a scary</p>
+                </div>
+                <div>
+                    <p>a goofy</p>
+                </div>
+                <div>
+                    <p>a slimy</p>
+                </div>
+                <div>
+                    <p>a barking</p>
+                </div>
+                <div>
+                    <p>a fat</p>
+                </div>
+            </div>
+            <!-- fourth section div for the 2nd noun option -->
+            <div id="noun2opt" class="options">
+                <div>
+                    <p>goat</p>
+                </div>
+                <div>
+                    <p>monkey</p>
+                </div>
+                <div>
+                    <p>fish</p>
+                </div>
+                <div>
+                    <p>cow</p>
+                </div>
+                <div>
+                    <p>frog</p>
+                </div>
+                <div>
+                    <p>bug</p>
+                </div>
+                <div>
+                    <p>worm</p>
+                </div>
+            </div>
+            <!-- last section div for place/setting option for the story -->
+            <div id="settingopt" class="options">
+                <div>
+                    <p>on the moon</p>
+                </div>
+                <div>
+                    <p>on the chair</p>
+                </div>
+                <div>
+                    <p>in my spaghetti</p>
+                </div>
+                <div>
+                    <p>in my soup</p>
+                </div>
+                <div>
+                    <p>on the grass</p>
+                </div>
+                <div>
+                    <p>in my shoes</p>
+                </div>
+            </div>
+        </div>
+        <!-- the script tag commented below was used as a try-out, can be completely ignored -->
+        <!-- <script src="js/index.js"></script> -->
+    </body>
+</html>
